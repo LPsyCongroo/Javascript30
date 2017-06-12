@@ -45,6 +45,7 @@ function setDate(){
 
 }
 
-setInterval(setDate, 1000);
+setDate(); //Initialize the clock without a delay upon first opening the page
+setInterval(setDate, 1000); //Interval for which to have the function called.
 
 document.querySelector(".hand").style.display = "block";
